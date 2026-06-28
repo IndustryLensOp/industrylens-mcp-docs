@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.industry-lens/mcp-public",
+  "title": "IndustryLens",
+  "description": "B2B competitive-intelligence reports and head-to-head competitor comparisons from IndustryLens.",
+  "websiteUrl": "https://industry-lens.com",
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.industry-lens.com/mcp/public"
+    }
+  ]
+}
