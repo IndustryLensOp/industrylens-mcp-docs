@@ -46,6 +46,20 @@ Per-client walkthroughs (Claude Desktop, Claude Code, Cursor, VS Code, ChatGPT, 
 | `list_markets` | The B2B SaaS markets IndustryLens monitors; each item returns a `slug` usable with `get_market_landscape`. |
 | `get_market_landscape` | Whole-category map for a market: the published category overview plus every player tracked in it — not a self-selected competitor set. |
 
+## Resources
+
+| Resource | What it does |
+|----------|--------------|
+| `industrylens://reports` | The catalog of published competitive-intelligence reports as JSON (slug, title, url). |
+| `industrylens://reports/{slug}` | Read pattern for a single report: the full body of the report with that slug. |
+
+## Prompts
+
+| Prompt | What it does |
+|--------|--------------|
+| `market_brief` | Builds a dated, cited competitive brief for one company, using `get_competitive_profile` and `get_competitor_moves_diff`. Argument: `company` (required) — name or domain, e.g. `Apollo` or `apollo.io`. |
+| `compare_two` | Produces a head-to-head comparison of two companies, preferring a published IndustryLens comparison and falling back to each company's profile. Arguments: `company_a` and `company_b` (both required) — name or domain. |
+
 The public tier returns facts about companies and the existence of strategic shifts (with real analysis dates), never a customer's private data. Deeper, per-account intelligence (full reasoning, recommendations, weekly briefings) lives in an IndustryLens account: https://industry-lens.com/pricing
 
 ## Registry
