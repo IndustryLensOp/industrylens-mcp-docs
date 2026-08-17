@@ -10,8 +10,11 @@
   },
   "icons": [
     {
-      "src": "https://industry-lens.com/logo.png",
-      "mimeType": "image/png"
+      "src": "https://industry-lens.com/IndustryLens_Favicon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "288x288"
+      ]
     }
   ],
   "version": "0.2.0",
