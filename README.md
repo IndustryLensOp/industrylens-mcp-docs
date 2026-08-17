@@ -41,12 +41,20 @@ Per-client walkthroughs (Claude Desktop, Claude Code, Cursor, VS Code, ChatGPT, 
 | `list_comparisons` | Browse head-to-head competitor comparisons. |
 | `get_comparison` | Full structured body of a comparison by slug. |
 | `subscribe_to_newsletter` | Subscribe to the weekly intelligence briefing (with consent). |
+| `get_competitor_moves_diff` | A competitor's dated change feed: every detected was → now strategic shift, newest first, each stamped with its real analysis date. |
+| `get_pricing_changes` | Recent pricing and packaging changes across tracked markets — change type, severity, materiality score, plain-language summary, and detection date. |
+| `list_markets` | The B2B SaaS markets IndustryLens monitors; each item returns a `slug` usable with `get_market_landscape`. |
+| `get_market_landscape` | Whole-category map for a market: the published category overview plus every player tracked in it — not a self-selected competitor set. |
 
 The public tier returns facts about companies and the existence of strategic shifts (with real analysis dates), never a customer's private data. Deeper, per-account intelligence (full reasoning, recommendations, weekly briefings) lives in an IndustryLens account: https://industry-lens.com/pricing
 
 ## Registry
 
 This server is published to the official MCP Registry as `com.industry-lens/mcp-public`. See [`server.json`](./server.json).
+
+## License
+
+The documentation and manifest in this repository are MIT-licensed (see [`LICENSE`](./LICENSE)). The server implementation is private.
 
 ## Links
 
