@@ -29,6 +29,20 @@ Transport: **Streamable HTTP**. Add it to any MCP client. Example (Claude Deskto
 
 Per-client walkthroughs (Claude Desktop, Claude Code, Cursor, VS Code, ChatGPT, Gemini) with screenshots: **https://industry-lens.com/mcp**
 
+### Quick install
+
+| App | How |
+|-----|-----|
+| Claude (web, desktop, mobile) | Add from the [Claude Connectors Directory](https://claude.ai/directory/industrylens) (signs in to your IndustryLens account), or add a custom connector with the public URL above. |
+| Claude Code | `claude mcp add industrylens --transport http https://api.industry-lens.com/mcp/public` |
+| Gemini CLI | `gemini extensions install https://github.com/IndustryLensOp/industrylens-mcp-docs` |
+| Cursor | [Cursor Directory](https://cursor.directory/plugins/industrylens-mcp), or add the `mcp.json` above. |
+| Any MCP app | Use the public URL above (Streamable HTTP, no auth). |
+
+### Signed-in account endpoint
+
+IndustryLens customers can connect `https://api.industry-lens.com/mcp` (OAuth 2.0 with dynamic client registration). Sign in with your IndustryLens email and the 6-digit code we send, then approve access. This adds your own tracked competitors, battlecards, comparisons and recommendations. Most tools only read data; three save something when you ask (a battlecard note, an intelligence tip for review, a newsletter subscription). Revoke access any time at https://connect.industry-lens.com/keys.
+
 ## Tools (public tier)
 
 | Tool | What it does |
@@ -62,9 +76,9 @@ Per-client walkthroughs (Claude Desktop, Claude Code, Cursor, VS Code, ChatGPT, 
 
 The public tier returns facts about companies and the existence of strategic shifts (with real analysis dates), never a customer's private data. Deeper, per-account intelligence (full reasoning, recommendations, weekly briefings) lives in an IndustryLens account: https://industry-lens.com/pricing
 
-## Registry
+## Registry and directories
 
-This server is published to the official MCP Registry as `com.industry-lens/mcp-public`. See [`server.json`](./server.json).
+This server is published to the official MCP Registry as `com.industry-lens/mcp-public` (see [`server.json`](./server.json)). It is also listed in the [Claude Connectors Directory](https://claude.ai/directory/industrylens), [Cursor Directory](https://cursor.directory/plugins/industrylens-mcp), [Glama](https://glama.ai/mcp/servers/IndustryLensOp/industrylens-mcp-docs) and [Smithery](https://smithery.ai/servers/industrylens/mcp). This repo also works as a Gemini CLI extension ([`gemini-extension.json`](./gemini-extension.json)) and an Agent Plugin ([`plugin.json`](./plugin.json), [`mcp.json`](./mcp.json)).
 
 ## License
 
