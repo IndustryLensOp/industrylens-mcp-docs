@@ -1,0 +1,12 @@
+{
+  "name": "industrylens",
+  "version": "0.2.0",
+  "description": "Competitive and market intelligence for B2B SaaS: competitor profiles, strategic moves, pricing changes and market landscapes, with every fact dated and sourced. Free public tier, no account needed.",
+  "mcpServers": {
+    "industrylens": {
+      "httpUrl": "https://api.industry-lens.com/mcp/public",
+      "timeout": 60000
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
