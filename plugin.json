@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "industrylens",
+  "version": "0.2.0",
+  "description": "Competitive and market intelligence for B2B SaaS: competitor profiles, strategic moves, pricing changes, market landscapes, reports and comparisons. Every fact is dated and sourced.",
+  "author": {
+    "name": "IndustryLens",
+    "email": "access@industry-lens.com",
+    "url": "https://industry-lens.com"
+  },
+  "homepage": "https://industry-lens.com/mcp",
+  "repository": "https://github.com/IndustryLensOp/industrylens-mcp-docs",
+  "license": "MIT",
+  "keywords": [
+    "competitive-intelligence",
+    "market-intelligence",
+    "b2b-saas",
+    "pricing",
+    "sales-intelligence",
+    "mcp"
+  ]
+}
