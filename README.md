@@ -73,6 +73,11 @@ IndustryLens customers can connect `https://api.industry-lens.com/mcp` (OAuth 2.
 |--------|--------------|
 | `market_brief` | Builds a dated, cited competitive brief for one company, using `get_competitive_profile` and `get_competitor_moves_diff`. Argument: `company` (required) — name or domain, e.g. `Apollo` or `apollo.io`. |
 | `compare_two` | Produces a head-to-head comparison of two companies, preferring a published IndustryLens comparison and falling back to each company's profile. Arguments: `company_a` and `company_b` (both required) — name or domain. |
+| `competitor_this_month` | What changed for one company in the last month, with dates and sources. Argument: `company` (required) — name or domain. |
+| `pricing_changes` | Recent pricing and packaging changes for one company, or across a whole market. Arguments: `company` or `market` (both optional; omit both for the latest changes everywhere). |
+| `who_competes` | Who competes with a company and how they differ. Argument: `company` (required) — name or domain. |
+
+Signed-in accounts also get `call_prep` (talking points against one of your tracked competitors) and `weekly_action` (what to do this week from your latest signals).
 
 The public tier returns facts about companies and the existence of strategic shifts (with real analysis dates), never a customer's private data. Deeper, per-account intelligence (full reasoning, recommendations, weekly briefings) lives in an IndustryLens account: https://industry-lens.com/pricing
 
